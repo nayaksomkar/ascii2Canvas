@@ -1,0 +1,8 @@
+flowchart TD
+    Q["User Query"] --> QE["Query Embed"]
+    QE --> R["Retrieve<br/>Top-K Docs"]
+    R --> RK["Rerank<br/>(Cross-Enc)"]
+    RK --> CA["Context Assembly"]
+    CA --> PB["Prompt Build"]
+    PB --> G["Generate<br/>(LLM)"]
+    G --> Resp["Response"]

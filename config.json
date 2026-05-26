@@ -1,0 +1,10 @@
+{
+  "theme": "dark",
+  "input_dir": "examples",
+  "output_dir": "outputs",
+  "files": [
+    "pipeline.txt",
+    "architecture.txt",
+    "rag_flow.txt"
+  ]
+}

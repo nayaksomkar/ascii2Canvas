@@ -1,0 +1,7 @@
+flowchart TD
+    Client["Client"] --> API["API Gateway"]
+    API --> LB["Load Balancer"]
+    LB --> SA["Service A<br/>(Auth)"]
+    LB --> SB["Service B<br/>(Business)"]
+    SA --> DB[("Database<br/>(PostgreSQL)")]
+    SB --> DB
